@@ -1,3 +1,5 @@
+# 📜 README
+
 ## 🚀 Types of Commits
 
 | Emoji | Type       | Description                                  |
@@ -10,46 +12,60 @@
 | ⚡    | `perf`     | Performance improvements                     |
 | 🗑     | `remove`   | Removing code or files                       |
 
-## 🏗 Git Commit Examples
+## 🚀 How to Deploy a Next.js Project in Expo Using Its CLI
 
-**Feature Addition:**
+### 1️⃣ Build Your Next.js Project:
 
-```
-git commit -m "✨ feature(auth): add OAuth support"
-```
+- Make changes in `next.config.ts` to configure the project for export.
+- Example configuration:
 
-**Bug Fix:**
+  ```typescript
+  import type { NextConfig } from "next";
 
-```
-git commit -m "🐛 fix(ui): resolve button alignment issue"
-```
+  const nextConfig: NextConfig = {
+    output: "export",
+    reactStrictMode: true,
+  };
 
-**Refactoring Code:**
+  export default nextConfig;
+  ```
 
-```
-git commit -m "🛠 refactor(database): optimize query performance"
-```
+### 2️⃣ Build the Project:
 
-**Updating Documentation:**
+- Run the following command to build your Next.js project:
+  ```bash
+  npx next build
+  ```
 
-```
-git commit -m "📝 docs(readme): update contribution guidelines"
-```
+### 3️⃣ Deploy the Project in Expo:
 
-**Code Style Changes:**
+- Use the Expo Application Services (EAS) CLI to deploy your project:
+  ```bash
+  eas deploy --export-dir=out
+  ```
 
-```
-git commit -m "🎨 style(css): improve button hover effect"
-```
+### 4️⃣ Get Deployment URL:
 
-**Performance Improvement:**
+- After deployment, you will receive a deployment URL.
 
-```
-git commit -m "⚡ perf(loading): reduce initial page load time"
-```
+  Example:
 
-**Removing Code or Files:**
+  ```
+  https://bhuvneshverma--yxdct6yk0b.expo.app
+  ```
 
-```
-git commit -m "🗑 remove(legacy): delete unused API endpoints"
-```
+### 5️⃣ Change to Production (Optional):
+
+- If you want to change the deployment to production, run the following command with your deployment ID:
+
+  ```bash
+  eas deploy:alias --prod --id=DEPLOYMENT-ID
+  ```
+
+- Example:
+
+  ```bash
+  eas deploy:alias --prod --id=yxdct6yk0b
+  ```
+
+### The final production URL you receive will be in the format: `https://bhuvneshverma.expo.app`
