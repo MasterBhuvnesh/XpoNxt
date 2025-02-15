@@ -57,8 +57,8 @@ eas deploy --export-dir=out
 
 ### 🎯 **Final Production URL**
 
-Once deployed to production, your project will be available at:  
+Once deployed to production, your project url will look like :  
 `https://bhuvneshverma.expo.app`
 
 🔗 **Check it out:**  
-[![Bhuvnesh Verma](https://bhuvneshverma.expo.app)](https://bhuvneshverma.expo.app)
+[![Bhuvnesh Verma](bhuvneshverma.expo.app.png)](https://bhuvneshverma.expo.app)
