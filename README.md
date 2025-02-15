@@ -1,23 +1,14 @@
-# 📜 README
+Here’s your styled guide with improved readability and structure:
 
-## 🚀 Types of Commits
+---
 
-| Emoji | Type       | Description                                  |
-| ----- | ---------- | -------------------------------------------- |
-| ✨    | `feature`  | Adding a new feature                         |
-| 🐛    | `fix`      | Fixing a bug                                 |
-| 🛠     | `refactor` | Code restructuring without functional change |
-| 📝    | `docs`     | Updating documentation                       |
-| 🎨    | `style`    | Code style changes (e.g., formatting)        |
-| ⚡    | `perf`     | Performance improvements                     |
-| 🗑     | `remove`   | Removing code or files                       |
+# 🌐 **Guide to Deploying a Next.js Project to Expo**
 
-## 🚀 How to Deploy a Next.js Project in Expo Using Its CLI
+## 🚀 **Steps to Deploy Using Expo CLI**
 
-### 1️⃣ Build Your Next.js Project:
+### 1️⃣ **Configure Your Next.js Project**
 
-- Make changes in `next.config.ts` to configure the project for export.
-- Example configuration:
+- Update `next.config.ts` to enable static export:
 
   ```typescript
   import type { NextConfig } from "next";
@@ -30,42 +21,44 @@
   export default nextConfig;
   ```
 
-### 2️⃣ Build the Project:
+### 2️⃣ **Build the Project**
 
-- Run the following command to build your Next.js project:
-  ```bash
-  npx next build
-  ```
+Run the following command to generate the output files:
 
-### 3️⃣ Deploy the Project in Expo:
+```bash
+npx next build
+```
 
-- Use the Expo Application Services (EAS) CLI to deploy your project:
-  ```bash
-  eas deploy --export-dir=out
-  ```
+### 3️⃣ **Deploy with Expo**
 
-### 4️⃣ Get Deployment URL:
+Use Expo Application Services (EAS) to deploy your project:
 
-- After deployment, you will receive a deployment URL.
+```bash
+eas deploy --export-dir=out
+```
 
-  Example:
+### 4️⃣ **Get Your Deployment URL**
 
+- After deployment, you’ll receive a link to access your project:
   ```
   https://bhuvneshverma--yxdct6yk0b.expo.app
   ```
 
-### 5️⃣ Change to Production (Optional):
+### 5️⃣ **Switch to Production (Optional)**
 
-- If you want to change the deployment to production, run the following command with your deployment ID:
-
+- To set up a production alias, use:
   ```bash
   eas deploy:alias --prod --id=DEPLOYMENT-ID
   ```
-
-- Example:
-
+  Example:
   ```bash
   eas deploy:alias --prod --id=yxdct6yk0b
   ```
 
-### The final production URL you receive will be in the format: `https://bhuvneshverma.expo.app`
+### 🎯 **Final Production URL**
+
+Once deployed to production, your project will be available at:  
+`https://bhuvneshverma.expo.app`
+
+🔗 **Check it out:**  
+[![Bhuvnesh Verma](https://bhuvneshverma.expo.app)](https://bhuvneshverma.expo.app)
