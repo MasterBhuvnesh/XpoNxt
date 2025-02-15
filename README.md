@@ -60,5 +60,10 @@ eas deploy --export-dir=out
 Once deployed to production, your project url will look like :  
 `https://bhuvneshverma.expo.app`
 
-🔗 **Check it out:**  
+🔗 **Check it out:**
+
 [![Bhuvnesh Verma](bhuvneshverma.expo.app.png)](https://bhuvneshverma.expo.app)
+
+### 💡 **Acknowledgments**
+
+Special thanks to [ide](https://github.com/ide) for their clear and concise explanation regarding the deployment of Next.js projects using Expo Application Services (EAS).
