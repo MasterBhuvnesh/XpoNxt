@@ -1,7 +1,3 @@
-Here’s your styled guide with improved readability and structure:
-
----
-
 # 🌐 **Guide to Deploying a Next.js Project to Expo**
 
 ## 🚀 **Steps to Deploy Using Expo CLI**
