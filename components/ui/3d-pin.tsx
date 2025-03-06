@@ -36,6 +36,7 @@ export const PinContainer = ({
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      target="_blank"
       href={href || "/"}
     >
       <div
@@ -54,7 +55,10 @@ export const PinContainer = ({
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} href={href} />
+      <PinPerspective
+        title={title}
+        href={href}
+      />
     </Link>
   );
 };
